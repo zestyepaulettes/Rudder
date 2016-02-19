@@ -18,8 +18,9 @@
   "homepage": "https://github.com/aarti156/zestyepaulettes#readme",
   "devDependencies": {},
   "dependencies": {
+    "body-parser": "^1.15.0",
     "express": "^4.4.5",
     "mongoose": "^4.1.0",
-    "morgan": "^1.1.1",
+    "morgan": "^1.1.1"
   }
 }
