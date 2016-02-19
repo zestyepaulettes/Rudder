@@ -1,0 +1,25 @@
+{
+  "name": "zestyepaulettes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aarti156/zestyepaulettes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aarti156/zestyepaulettes/issues"
+  },
+  "homepage": "https://github.com/aarti156/zestyepaulettes#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "express": "^4.4.5",
+    "mongoose": "^4.1.0",
+    "morgan": "^1.1.1",
+  }
+}
