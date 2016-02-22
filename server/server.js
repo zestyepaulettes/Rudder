@@ -21,6 +21,7 @@ app.get('/api/techie', function(req,res) {
   });
 });
 
+<<<<<<< HEAD
 app.post('/api/techie', function(req, res){
   //make sure req.body has correct obj format
   db.Techie.create(req.body, function(err ,techie) {
@@ -30,6 +31,10 @@ app.post('/api/techie', function(req, res){
       res.send(200, techie);
     }
   });
+=======
+app.post('/api/techie', function(req, res) {
+  // db.Techie.create(req.body, function(err ,techie))
+>>>>>>> Started refactoring react app structure
 });
 
 var port = 8000;

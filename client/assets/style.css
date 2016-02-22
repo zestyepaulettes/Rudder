@@ -63,25 +63,25 @@ time, mark, audio, video{
   font-family: 'Montserrat', sans-serif;
 
 }
-h1{
+h1 {
   text-align: center;
   font-size: 25px;
   padding: 5px;
 }
-nav{
+nav {
   background-color: black;
 }
-nav li{
+nav li {
   display: inline-block;
   padding: 10px;
 }
-nav a{
+nav a {
   color: white;
 }
 main {
   padding: 25px;
 }
-.techie-list{
+.techie-list {
   margin-top: 20px;
 }
 .techie-list li {
