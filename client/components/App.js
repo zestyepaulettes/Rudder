@@ -16,14 +16,15 @@ class App extends React.Component {
 
   render() {
     return(
+    <div>
       <div>
         <Questions answered={false} onAnswer={this.onAnswer.bind(this)}/>
       </div>
       <div>
         <ResultList/>
       </div>
-
+    </div>
     )
   }
 }
-ReactDOM.render(<App/>, document.getElementbyId('app'));
+ReactDOM.render(<App/>, document.getElementById('app'));
