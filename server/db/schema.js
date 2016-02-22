@@ -13,7 +13,7 @@ var TechieSchema = new mongoose.Schema({
   graphics: Boolean,
   staticSite: Boolean,
   interactiveSites: Boolean,
-  fullStackBeasts: Boolean
+  fullStackBeast: Boolean
 });
 
 module.exports = mongoose.model('Techie', TechieSchema);
