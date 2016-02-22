@@ -1,16 +1,16 @@
-var fakeTechies = [
+var fakeData = [
   {
     username: 'allen',
     name: 'Allen L. Mills',
     password: 'allen123',
     email: 'allen@mills.com',
     phoneNum: 8300000233,
-    bio: 'Full stack programmer from Holden'
+    bio: 'Full stack programmer from Holden',
     mobileApp: false,
     graphics: false,
     staticSite: true,
     interactiveSites: true,
-    fullStackBesat: true
+    fullStackBeast: true
   },
   {
     username: 'mark',
@@ -18,12 +18,12 @@ var fakeTechies = [
     password: 'mark123',
     email: 'mark@harrison.com',
     phoneNum: 1239818194,
-    bio: 'Graphics designer from Dallas'
+    bio: 'Graphics designer from Dallas',
     mobileApp: false,
     graphics: true,
     staticSite: false,
     interactiveSites: false,
-    fullStackBesat: false
+    fullStackBeast: false
   },
   {
     username: 'michael',
@@ -31,12 +31,12 @@ var fakeTechies = [
     password: 'michael123',
     email: 'allen@mills.com',
     phoneNum: 8401740122,
-    bio: 'Mobile developer from North Carolina'
+    bio: 'Mobile developer from North Carolina',
     mobileApp: true,
     graphics: false,
     staticSite: true,
     interactiveSites: false,
-    fullStackBesat: false
+    fullStackBeast: false
   },
   {
     username: 'bobbie',
@@ -44,11 +44,11 @@ var fakeTechies = [
     password: 'wilson123',
     email: 'bobbie@wilson.com',
     phoneNum: 8901740123,
-    bio: 'Basic website developer from Kansas'
     mobileApp: false,
     graphics: false,
     staticSite: true,
     interactiveSites: false,
-    fullStackBesat: false
   }
-]
+];
+
+module.exports = fakeData;

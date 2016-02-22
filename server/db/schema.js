@@ -1,5 +1,7 @@
 var mongoose = require('mongoose');
 
+var fakeData = require('./fakeData');
+
 mongoose.connect('mongodb://localhost/cushion');
 
 var techieSchema = new mongoose.Schema({

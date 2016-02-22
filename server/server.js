@@ -2,24 +2,29 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var morgan = require('morgan');
 
-var db = 
+var db = require('./db/schema');
 
 var app = express();
 
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
-app.use(express.static(__dirname + '/../../client'));
+app.use(express.static(__dirname + '/../client'));
 
 app.get('/api/techie', function(req,res) {
-  db.find({}, function(err, techie) {
+  db.Techie.find({}, function(err, techies) {
     if(err) {
       res.send(404);
     } else {
-      res.send(200, techie);
+      res.status(200).send(techies);
     }
   });
 });
+
+app.post('/api/techie', function(req, res){
+  // db.Techie.create(req.body, function(err ,techie))
+});
+
 var port = 8000;
 app.listen(8000);
 
