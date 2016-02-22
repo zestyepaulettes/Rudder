@@ -1,5 +1,7 @@
 var mongoose = require('mongoose');
 
+var fakeData = require('./fakeData');
+
 mongoose.connect('mongodb://localhost/cushion');
 
 var techieSchema = new mongoose.Schema({
@@ -17,5 +19,8 @@ var techieSchema = new mongoose.Schema({
 });
 
 var Techie = mongoose.model('Techie', techieSchema);
+
+Techie.remove({});
+Techie.create(fakeData);
 
 module.exports.Techie = Techie;

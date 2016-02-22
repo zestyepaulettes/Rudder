@@ -4,7 +4,7 @@ class App extends React.Component {
     this.state = {
       currentQuestion: '',
       currentOptions: ['', ''],
-      results: null
+      results: []
     };
   }
   onAnswer(query) {
@@ -16,9 +16,10 @@ class App extends React.Component {
     searchTechies({TODO}, ajaxCallback);
   }
   componentDidMount(){
-    var updateState = function(results){
+    var updateState = (results) => {
+      console.log(results);
       this.setState({
-        results: results;
+        results: results
       });
     }
     getTechies(updateState);
@@ -31,7 +32,7 @@ class App extends React.Component {
         <Questions answered={false} onAnswer={this.onAnswer.bind(this)}/>
       </div>
       <div>
-        <ResultList/>
+        <ResultList results={this.state.results}/>
       </div>
     </div>
     )
