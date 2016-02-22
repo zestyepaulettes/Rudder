@@ -8,7 +8,7 @@ var getTechies = function(success, fail) {
 
 var getTechiesByType = function(techieType, success, fail) {
   $.get({
-    url: 'http://127.0.0.1:8000/api/techie',
+    url: 'http://127.0.0.1:8000/api/techie/' + techieType,
     success: success,
     error: fail,
     params: {
