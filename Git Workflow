@@ -37,3 +37,4 @@ BONUS (More thorough): Before approving a pull request
 1. LOCAL || git pull TEAMMEMBERNAME feature-branch-name
 1. test
 1. GITHUB merge pull request if satisfied
+
