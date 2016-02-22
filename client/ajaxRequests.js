@@ -6,6 +6,19 @@ var getTechies = function(success, fail) {
   });
 };
 
+var getTechiesByType = function(techieType, success, fail) {
+  $.get({
+    url: 'http://127.0.0.1:8000/api/techie',
+    success: success,
+    error: fail,
+    params: {
+      techieType: techieType  //We're sending the techie type as a param to 
+                              //filter the database based on the techieType
+                              //TODO connect parameters query to backend
+    }
+  });
+};
+
 var getAngelListData = function(success, fail) {
   $.get({
     url: 'http://127.0.0.1:8000/api/techie',

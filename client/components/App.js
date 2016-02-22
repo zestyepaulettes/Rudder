@@ -1,25 +1,3 @@
-var ALL_QUESTIONS = {
-  whyAreYouHere:{
-    question: 'Why are you here',
-    options: {
-      iHaveTech: 'I have tech', 
-      iNeedTech: 'I need tech'
-      }
-  },
-  iNeedTech:{
-    question: 'What do you need?',
-    options: ['A website', 'Social media']
-  },
-  website:{
-    question: 'What do you want your website to do?',
-     options: ['To sell things', 
-              'Ugrade an existing website', 
-              'To advertise my business', 
-              'I don\'t know! I just want to be on the internet!', 
-              'Heavily customized website']
-  }
-}; 
-
 class App extends React.Component {
   constructor(props){
     super(props);
