@@ -30,6 +30,7 @@ app.post('/api/techie', function(req, res){
       res.send(200, techie);
     }
   });
+});
 
 var port = 8000;
 app.listen(8000);

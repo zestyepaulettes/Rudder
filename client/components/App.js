@@ -41,7 +41,7 @@ class App extends React.Component {
     return(
     <div>
       <div>
-        <Question question={this.state.currentQuestion}/>
+        <QuestionList question={this.state.currentQuestion} changeQuestion={this.changeQuestion.bind(this)}/>
       </div>
       <div>
         <ResultList results={this.state.results}/>
