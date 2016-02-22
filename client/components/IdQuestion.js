@@ -1,6 +1,6 @@
 var IdQuestion = ({answered, onAnswer}) => (
-  <div>
-  // <h1>WHO ARE YOU ?</h1>
+  <div class="main">
+   <h1>Who are you?</h1>
     <p>
       <HaveTech answered = {answered}/>
     </p>
