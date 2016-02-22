@@ -2,7 +2,9 @@ class App extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      results: null
+      currentQuestion: '',
+      currentOptions: ['', ''],
+      results: []
     };
   }
   onAnswer(query) {
@@ -13,6 +15,15 @@ class App extends React.Component {
     };
     searchTechies({TODO}, ajaxCallback);
   }
+  componentDidMount(){
+    var updateState = (results) => {
+      console.log(results);
+      this.setState({
+        results: results
+      });
+    }
+    getTechies(updateState);
+  }
 
   render() {
     return(
@@ -21,7 +32,7 @@ class App extends React.Component {
         <Questions answered={false} onAnswer={this.onAnswer.bind(this)}/>
       </div>
       <div>
-        <ResultList/>
+        <ResultList results={this.state.results}/>
       </div>
     </div>
     )
