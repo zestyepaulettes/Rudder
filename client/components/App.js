@@ -4,11 +4,7 @@ class App extends React.Component {
     this.state = {
       currentQuestion: '',
       currentOptions: ['', ''],
-<<<<<<< HEAD
-      results: null
-=======
       results: []
->>>>>>> 72a93b2d1129abfbfce1536faf29cbbe27f0c71a
     };
   }
   onAnswer(query) {
@@ -20,16 +16,10 @@ class App extends React.Component {
     searchTechies({TODO}, ajaxCallback);
   }
   componentDidMount(){
-<<<<<<< HEAD
-    var updateState = function(results){
-      this.setState({
-        results: results;
-=======
     var updateState = (results) => {
       console.log(results);
       this.setState({
         results: results
->>>>>>> 72a93b2d1129abfbfce1536faf29cbbe27f0c71a
       });
     }
     getTechies(updateState);

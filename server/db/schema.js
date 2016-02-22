@@ -20,10 +20,4 @@ var techieSchema = new mongoose.Schema({
 
 var Techie = mongoose.model('Techie', techieSchema);
 
-<<<<<<< HEAD
-=======
-Techie.remove({});
-Techie.create(fakeData);
-
->>>>>>> 72a93b2d1129abfbfce1536faf29cbbe27f0c71a
 module.exports.Techie = Techie;
