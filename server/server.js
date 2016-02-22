@@ -9,7 +9,7 @@ var app = express();
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
-app.use(express.static(__dirname + '/../client'));
+app.use(express.static(__dirname +  '/../client'));
 
 app.get('/api/techie', function(req,res) {
   db.Techie.find({}, function(err, techies) {
@@ -30,7 +30,6 @@ app.post('/api/techie', function(req, res){
       res.send(200, techie);
     }
   });
-});
 
 var port = 8000;
 app.listen(8000);
