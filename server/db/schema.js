@@ -18,6 +18,9 @@ var techieSchema = new mongoose.Schema({
   fullStackBeast: Boolean
 });
 
+//TODO bussiness owner schema
+
+
 var Techie = mongoose.model('Techie', techieSchema);
 
 module.exports.Techie = Techie;
