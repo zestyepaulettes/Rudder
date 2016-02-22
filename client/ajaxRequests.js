@@ -1,4 +1,4 @@
-var getTechies = function(success, fail){
+var getTechies = function(success, fail) {
   $.get({
     url: 'http://127.0.0.1:8000/api/techie',
     success: success,
@@ -6,7 +6,7 @@ var getTechies = function(success, fail){
   });
 };
 
-var getAngelListData = function(success, fail){
+var getAngelListData = function(success, fail) {
   $.get({
     url: 'http://127.0.0.1:8000/api/techie',
     success: success,

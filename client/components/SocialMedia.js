@@ -1,5 +1,4 @@
 var SocialMedia = (props) => (
-  <div>
-  </div>
+  <div></div>
 );
 window.SocialMedia = SocialMedia;
