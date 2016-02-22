@@ -81,3 +81,12 @@ nav a{
 main {
   padding: 25px;
 }
+.techie-list{
+  margin-top: 20px;
+}
+.techie-list li {
+  padding: 15px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  background-color: #ccc;
+}
