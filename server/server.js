@@ -22,7 +22,14 @@ app.get('/api/techie', function(req,res) {
 });
 
 app.post('/api/techie', function(req, res){
-  // db.Techie.create(req.body, function(err ,techie))
+  //make sure req.body has correct obj format
+  db.Techie.create(req.body, function(err ,techie) {
+    if(err) {
+      res.send(404);
+    } else {
+      res.send(200, techie);
+    }
+  });
 });
 
 var port = 8000;
