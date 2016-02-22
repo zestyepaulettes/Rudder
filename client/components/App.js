@@ -2,6 +2,8 @@ class App extends React.Component {
   constructor(props){
     super(props);
     this.state = {
+      currentQuestion: '',
+      currentOptions: ['', ''],
       results: null
     };
   }
@@ -12,6 +14,14 @@ class App extends React.Component {
       });
     };
     searchTechies({TODO}, ajaxCallback);
+  }
+  componentDidMount(){
+    var updateState = function(results){
+      this.setState({
+        results: results;
+      });
+    }
+    getTechies(updateState);
   }
 
   render() {
