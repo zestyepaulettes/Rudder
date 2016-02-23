@@ -9,8 +9,6 @@ var keys = require('./keys.js');
 
 var db = require('./db/schema');
 
-// var GITHUB_CLIENT_ID = "--insert-github-client-id-here--";
-// var GITHUB_CLIENT_SECRET = "--insert-github-client-secret-here--";
 
 var app = express();
 
