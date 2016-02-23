@@ -7,15 +7,7 @@ class App extends React.Component {
       currentQuestion: {}
     };
   }
-  onAnswer(query) {
-    var ajaxCallback = (returnData) => {
-      this.setState({
-      results: returnData
-      });
-    };
-    searchTechies({}, ajaxCallback);
-  }
-
+  
   changeQuestion(newQuestion){
     this.setState({
       currentQuestion: this.state.allQuestions[newQuestion]
