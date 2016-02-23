@@ -22,9 +22,6 @@ var ALL_QUESTIONS = {
             dontknow: 'I don\'t know! I just want to be on the internet!', 
             customizedWebsite: 'Heavily customized website'
     },
-    method: (techieType)=>{
-      getTechiesByType(techieType);
-    },
     ajaxCall: true
   }
 }; 
