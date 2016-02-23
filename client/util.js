@@ -22,7 +22,9 @@ var ALL_QUESTIONS = {
             dontknow: 'I don\'t know! I just want to be on the internet!', 
             customizedWebsite: 'Heavily customized website'
     },
-    method: getTechies
+    method: function(techieType){
+      getTechiesByType(techieType);
+    },
   }
 }; 
 window.ALL_QUESTIONS = ALL_QUESTIONS;
