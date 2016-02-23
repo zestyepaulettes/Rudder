@@ -1,5 +1,5 @@
 var ResultListEntry = ({techie}) => (
-  <li>{techie.name} - {techie.phoneNum} </li>
+  <li>{techie.name} - {techie.phoneNum} - {techie.bio} </li>
 );
 
 window.ResultListEntry = ResultListEntry;
