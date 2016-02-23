@@ -22,9 +22,10 @@ var ALL_QUESTIONS = {
             dontknow: 'I don\'t know! I just want to be on the internet!', 
             customizedWebsite: 'Heavily customized website'
     },
-    method: function(techieType){
+    method: (techieType)=>{
       getTechiesByType(techieType);
     },
+    ajaxCall: true
   }
 }; 
 window.ALL_QUESTIONS = ALL_QUESTIONS;
