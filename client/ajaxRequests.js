@@ -6,15 +6,16 @@ var getTechies = function(success, fail) {
   });
 };
 
-var getTechiesByType = function(techieType, success, fail) {
+var getTechiesByType = function(techieType, callback) {
+  // console.log("Made it to the SEARCH! :D ", techieType);
   $.get({
     url: 'http://127.0.0.1:8000/api/techie/' + techieType,
-    success: success,
-    error: fail,
-    params: {
-      techieType: techieType  //We're sending the techie type as a param to 
-                              //filter the database based on the techieType
-                              //TODO connect parameters query to backend
+    success: callback,
+    error: function(data){
+      console.error(data);
+    },
+    data: {
+      'techieType': techieType 
     }
   });
 };
@@ -28,6 +29,7 @@ var getAngelListData = function(success, fail) {
 }
 
 window.getTechies = getTechies;
+window.getTechiesByType = getTechiesByType;
 
 var signUpTechie = function(newTechieObject, success, fail){
   $.post({

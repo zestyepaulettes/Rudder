@@ -7,19 +7,20 @@ class App extends React.Component {
       currentQuestion: {}
     };
   }
-  onAnswer(query) {
-    var ajaxCallback = (returnData) => {
-      this.setState({
-      results: returnData
-      });
-    };
-    searchTechies({}, ajaxCallback);
-  }
 
   changeQuestion(newQuestion){
     this.setState({
       currentQuestion: this.state.allQuestions[newQuestion]
     });
+  }
+
+  loadTechies(techieType){
+    var updateState = (results)=>{
+      this.setState({
+        results: results
+      });
+    };
+    getTechiesByType(techieType, updateState);
   }
 
   componentWillMount(){
@@ -32,7 +33,7 @@ class App extends React.Component {
       this.setState({
         results: results
       });
-    }
+    };
     getTechies(updateState);
   }
 
@@ -40,7 +41,7 @@ class App extends React.Component {
     return(
     <div>
       <div>
-        <QuestionList question={this.state.currentQuestion} changeQuestion={this.changeQuestion.bind(this)}/>
+        <QuestionList question={this.state.currentQuestion} changeQuestion={this.changeQuestion.bind(this)} loadTechies={this.loadTechies.bind(this)}/>
       </div>
       <div>
         <ResultList results={this.state.results}/>

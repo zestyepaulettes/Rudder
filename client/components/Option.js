@@ -1,4 +1,4 @@
-var Option = ({newQuestion, text, changeQuestion}) => (
-  <li onClick={function(){changeQuestion(newQuestion)}}>{text}</li>
+var Option = ({newQuestion, text, changeQuestion, loadTechies, ajaxCall}) => (
+  <li onClick={function(){ajaxCall ? loadTechies(newQuestion) : changeQuestion(newQuestion)}}>{text}</li>
 );
 window.Option = Option;
