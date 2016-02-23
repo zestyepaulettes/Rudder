@@ -29,7 +29,6 @@ class App extends React.Component {
   }
   componentDidMount(){
     var updateState = (results) => {
-      console.log(results);
       this.setState({
         results: results
       });
