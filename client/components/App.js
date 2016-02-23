@@ -2,9 +2,9 @@ class App extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      currentQuestion: '',
-      currentOptions: ['', ''],
-      results: []
+      allQuestions: ALL_QUESTIONS,
+      results: [],
+      currentQuestion: {}
     };
   }
   onAnswer(query) {
@@ -13,7 +13,19 @@ class App extends React.Component {
       results: returnData
       });
     };
-    searchTechies({TODO}, ajaxCallback);
+    searchTechies({}, ajaxCallback);
+  }
+
+  changeQuestion(newQuestion){
+    this.setState({
+      currentQuestion: this.state.allQuestions[newQuestion]
+    });
+  }
+
+  componentWillMount(){
+    this.setState({
+      currentQuestion: this.state.allQuestions.whyAreYouHere
+    });
   }
   componentDidMount(){
     var updateState = (results) => {
@@ -29,7 +41,7 @@ class App extends React.Component {
     return(
     <div>
       <div>
-        <Questions answered={false} onAnswer={this.onAnswer.bind(this)}/>
+        <QuestionList question={this.state.currentQuestion} changeQuestion={this.changeQuestion.bind(this)}/>
       </div>
       <div>
         <ResultList results={this.state.results}/>
