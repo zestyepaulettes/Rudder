@@ -21,6 +21,29 @@ app.get('/api/techie', function(req,res) {
   });
 });
 
+app.get('/api/techie/:techieType', function(req,res) {
+  var techieType;
+  if(req.query.techieType === 'sell'){
+    techieType = 'interactiveSites';
+  } else if (req.query.techieType === 'upgrade'){
+    techieType = 'graphics';
+  } else if (req.query.techieType === 'advertise'){
+    techieType = 'staticSite';
+  } else if (req.query.techieType === 'customizedWebsite'){
+    techieType = 'fullStackBeast';
+  }
+  var query = {};
+  query[techieType] = true;
+  db.Techie.find(query, function(err, techies) {
+    if(err) {
+      res.send(404);
+    } else {
+      console.log('THE TECHIES!!!!---------->', techies);
+      res.status(200).send(techies);
+    }
+  });
+});
+
 app.post('/api/techie', function(req, res){
   //make sure req.body has correct obj format
   db.Techie.create(req.body, function(err ,techie) {
