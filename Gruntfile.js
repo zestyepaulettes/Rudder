@@ -18,7 +18,7 @@ module.exports = function(grunt) {
       }
     },
 
-    clean: ['public/*']
+    clean: ['public/*', 'client/components/uglifiedTranspiledComponents.js', 'client/assets/uglifyStyleCss.css']
     ,
     babel: {
       options: {
@@ -32,6 +32,11 @@ module.exports = function(grunt) {
       }
     },
     uglify: {
+      my_target:{
+        files: {
+          'client/components/uglifiedTranspiledComponents.js':'public/transpiledComponents.js'
+        }
+      }
     },
 
     eslint: {
@@ -41,6 +46,11 @@ module.exports = function(grunt) {
     },
 
     cssmin: {
+      target:{
+        files: {
+          'client/assets/uglifyStyleCss.css': ['client/assets/style.css']
+        }
+      }
     },
 
     watch: {
@@ -55,7 +65,7 @@ module.exports = function(grunt) {
         ]
       },
       css: {
-        files: 'public/*.css',
+        files: 'client/assets/*.css',
         tasks: ['cssmin']
       }
     },
@@ -102,7 +112,7 @@ module.exports = function(grunt) {
   ////////////////////////////////////////////////////
 
   grunt.registerTask( 'test', [
-    'clean', 'concat', 'babel'
+    'clean', 'concat', 'babel','uglify','cssmin'
   ]);
 
   grunt.registerTask('build', [
