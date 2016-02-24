@@ -9,6 +9,5 @@ ReactDOM.render(
     <Route path="/" component={App}/>
     <Route path="/login" component={Login}/>
     <Route path="/signup" component={SignUpTechie}/>
-
   </Router>, document.getElementById('app')
 );
