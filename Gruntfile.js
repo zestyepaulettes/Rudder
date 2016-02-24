@@ -18,7 +18,7 @@ module.exports = function(grunt) {
       }
     },
 
-    clean: ['public/*', 'client/components/uglifiedTranspiledComponents.js', 'client/assets/uglifyStyleCss.css']
+    clean: ['public/*', 'client/transpiledComponents.min.js', 'client/assets/style.min.css']
     ,
     babel: {
       options: {
@@ -34,7 +34,7 @@ module.exports = function(grunt) {
     uglify: {
       my_target:{
         files: {
-          'client/components/uglifiedTranspiledComponents.js':'public/transpiledComponents.js'
+          'client/transpiledComponents.min.js':'public/transpiledComponents.js'
         }
       }
     },
@@ -48,7 +48,7 @@ module.exports = function(grunt) {
     cssmin: {
       target:{
         files: {
-          'client/assets/uglifyStyleCss.css': ['client/assets/style.css']
+          'client/assets/style.min.css': ['client/assets/style.css']
         }
       }
     },
@@ -60,13 +60,8 @@ module.exports = function(grunt) {
           'assets/**/*.js',//we have to take out css from assets
         ],
         tasks: [
-          'concat',
-          'uglify'
+          'build'
         ]
-      },
-      css: {
-        files: 'client/assets/*.css',
-        tasks: ['cssmin']
       }
     },
 
@@ -112,10 +107,11 @@ module.exports = function(grunt) {
   ////////////////////////////////////////////////////
 
   grunt.registerTask( 'test', [
-    'clean', 'concat', 'babel','uglify','cssmin'
+    
   ]);
 
   grunt.registerTask('build', [
+    'clean', 'concat', 'babel','uglify','cssmin'
   ]);
 
   grunt.registerTask('upload', function(n) {
