@@ -52,7 +52,7 @@ app.get('/auth/github',
 app.get('/auth/github/callback',
   passport.authenticate('github', { failureRedirect: '/login' }),
   function(req, res) {
-    res.redirect('/');
+    res.redirect('/#/signup');
   });
 
 app.get('/logout', function(req, res){
@@ -63,7 +63,7 @@ app.get('/logout', function(req, res){
 //middleware function that ensures authentication
 function ensureAuthenticated(req, res, next) {
   if (req.isAuthenticated()) { return next(); }
-  res.redirect('/login');
+  res.redirect('/#/login');
 }
 
 //sends to homepage
