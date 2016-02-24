@@ -3,6 +3,13 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     concat: {
+      options: {
+        separator: ' \n\n// =========================================\n\n'
+      },
+      dist: {
+        src: ['client/components/*.js'],
+        dest: 'public/concatedComponents.js'
+      }
     },
 
     nodemon: {
@@ -11,6 +18,19 @@ module.exports = function(grunt) {
       }
     },
 
+    clean: ['public/*']
+    ,
+    babel: {
+      options: {
+        sourceMap: true,
+        presets: ['es2015', 'react']
+      },
+      dist: {
+        files: {
+          'public/transpiledComponents.js':'public/concatedComponents.js'
+        }
+      }
+    },
     uglify: {
     },
 
@@ -50,8 +70,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-babel');
   grunt.loadNpmTasks('grunt-eslint');
-  grunt.loadNpmTasks('grunt-mocha-test');
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-nodemon');
 
@@ -80,8 +101,8 @@ module.exports = function(grunt) {
   // Main grunt tasks
   ////////////////////////////////////////////////////
 
-  grunt.registerTask('test', [
-    'mochaTest'
+  grunt.registerTask( 'test', [
+    'clean', 'concat', 'babel'
   ]);
 
   grunt.registerTask('build', [
