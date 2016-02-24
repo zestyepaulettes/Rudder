@@ -28,14 +28,14 @@ class App extends React.Component {
       currentQuestion: this.state.allQuestions.whyAreYouHere
     });
   }
-  componentDidMount(){
-    var updateState = (results) => {
-      this.setState({
-        results: results
-      });
-    };
-    getTechies(updateState);
-  }
+  // componentDidMount(){
+  //   var updateState = (results) => {
+  //     this.setState({
+  //       results: results
+  //     });
+  //   };
+  //   getTechies(updateState);
+  // }
 
   render() {
     return(

@@ -7,6 +7,8 @@ var IndexRoute = window.ReactRouter.IndexRoute;
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={App}/>
+    <Route path="/login" component={Login}/>
     <Route path="/signup" component={SignUpTechie}/>
+
   </Router>, document.getElementById('app')
 );
