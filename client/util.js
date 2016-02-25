@@ -25,4 +25,23 @@ var ALL_QUESTIONS = {
     ajaxCall: true
   }
 }; 
+
+var tips = {sell: 'sellsellsellsellsellsellsellsellsellsellsellsellsellsellsellsellsell', 
+upgrade:'upgradeupgradeupgradeupgradeupgradeupgradeupgradeupgradeupgradeupgradeupgrade',
+advertise: 'advertiseadvertiseadvertiseadvertiseadvertiseadvertiseadvertiseadvertiseadvertise',
+dontknow: 'dontknowdontknowdontknowdontknowdontknowdontknowdontknowdontknowdontknowdontknowdontknowdontknow',
+customizedWebsite: 'customizedWebsitecustomizedWebsitecustomizedWebsitecustomizedWebsitecustomizedWebsitecustomizedWebsitecustomizedWebsite',};
+
+
+$(document).ready(function(){
+    $("body").on('mouseenter','.Option', function(event){
+      $(this).find('small').show(1000);
+    });
+    $("body").on('mouseleave','.Option', function(event){
+      $(this).find('small').hide(500);
+    });
+});
+
+
 window.ALL_QUESTIONS = ALL_QUESTIONS;
+window.tips = tips;
