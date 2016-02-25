@@ -26,19 +26,19 @@ var ALL_QUESTIONS = {
   }
 }; 
 
-var tips = {sell: 'sellsellsellsellsellsellsellsellsellsellsellsellsellsellsellsellsell', 
-upgrade:'upgradeupgradeupgradeupgradeupgradeupgradeupgradeupgradeupgradeupgradeupgrade',
-advertise: 'advertiseadvertiseadvertiseadvertiseadvertiseadvertiseadvertiseadvertiseadvertise',
-dontknow: 'dontknowdontknowdontknowdontknowdontknowdontknowdontknowdontknowdontknowdontknowdontknowdontknow',
-customizedWebsite: 'customizedWebsitecustomizedWebsitecustomizedWebsitecustomizedWebsitecustomizedWebsitecustomizedWebsitecustomizedWebsite',};
+var tips = {sell: 'sell sell sell sell sell sell sellv sellsells ellsell sellsel lsellsel lsellsell', 
+upgrade:'upgradeup gradeup gradeupg radeupg radeupgrad eupgradeupgr adeupgradeupgr adeupgrade',
+advertise: 'adver ti seadve rtise advertisea dvertisea dvert iseadvert iseadv ertisead vertiseadvertise',
+dontknow: 'dontknowdontk nowdont knowdon tkno wdontknowd k now dontknowdont knowdontkn owd ontknowdontknowdontknow',
+customizedWebsite: 'cust om izedWebs itecust omi z edWebsit ecus t omizedWebsitecus tomize dWebsit ecusto edWebsite dWebsite',};
 
 
 $(document).ready(function(){
-    $("body").on('mouseenter','.Option', function(event){
-      $(this).find('small').show(1000);
+    $('body').on('mouseenter','.option', function(event){
+      $(this).find('small').show(200);
     });
-    $("body").on('mouseleave','.Option', function(event){
-      $(this).find('small').hide(500);
+    $('body').on('mouseleave','.option', function(event){
+      $(this).find('small').hide(100);
     });
 });
 

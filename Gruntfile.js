@@ -57,7 +57,7 @@ module.exports = function(grunt) {
       scripts: {
         files: [
           'client/components/**/*.js',
-          'assets/**/*.js',//we have to take out css from assets
+          'client/assets/style.css'
         ],
         tasks: [
           'build'
