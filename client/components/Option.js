@@ -5,6 +5,8 @@ var Option = ({newQuestion, text, changeQuestion, loadTechies, ajaxCall}) => (
   <li onClick={function(){
     if(newQuestion === 'iHaveTech') {
       hashHistory.push('/login');
+    } else if(newQuestion === 'socialMedia'){
+      hashHistory.push('/socialmedia')
     } else {
       ajaxCall ? loadTechies(newQuestion) : changeQuestion(newQuestion)
     }
