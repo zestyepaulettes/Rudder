@@ -40,7 +40,7 @@ var SocialMedia = (props) => (
     </div><br/><br/>
 
     <div id="yelp" class="container" class="jumbotron">
-      <h1>Do you have a Yelp</h1> <br/>
+      <h1>Do you have a Yelp?</h1> <br/>
       <p>Yelp is a powerful way to expose your business to local customers. Studies have shown that Nail Salons, Day Spa, Massage Therapy, and Restaurants benefit the most from using Yelp.</p><br/><br/>
       <p> There are several compnents to holding a successful yelp account for your business:</p> <br/>
         <p>1. Name and category<br/>
