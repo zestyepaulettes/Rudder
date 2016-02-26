@@ -26,11 +26,11 @@ var ALL_QUESTIONS = {
   }
 }; 
 
-var tips = {sell: 'sell sell sell sell sell sell sellv sellsells ellsell sellsel lsellsel lsellsell', 
-upgrade:'upgradeup gradeup gradeupg radeupg radeupgrad eupgradeupgr adeupgradeupgr adeupgrade',
-advertise: 'adver ti seadve rtise advertisea dvertisea dvert iseadvert iseadv ertisead vertiseadvertise',
-dontknow: 'dontknowdontk nowdont knowdon tkno wdontknowd k now dontknowdont knowdontkn owd ontknowdontknowdontknow',
-customizedWebsite: 'cust om izedWebs itecust omi z edWebsit ecus t omizedWebsitecus tomize dWebsit ecusto edWebsite dWebsite',};
+var tips = {sell: 'Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain', 
+upgrade:'Except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure consequences',
+advertise: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti',
+dontknow: 'am libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus',
+customizedWebsite: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',};
 
 
 $(document).ready(function(){

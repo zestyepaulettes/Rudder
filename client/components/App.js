@@ -1,3 +1,4 @@
+var Link = window.ReactRouter.Link;
 class App extends React.Component {
   constructor(props){
     super(props);
@@ -32,12 +33,21 @@ class App extends React.Component {
   render() {
     return(
     <div>
+      <nav>
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/login">Signup/Login</Link></li>
+          <li><Link to="/">Contact us</Link></li>
+        </ul>
+      </nav>
+    <main>
       <div>
         <QuestionList question={this.state.currentQuestion} changeQuestion={this.changeQuestion.bind(this)} loadTechies={this.loadTechies.bind(this)}/>
       </div>
       <div>
         <ResultList results={this.state.results}/>
       </div>
+    </main>
     </div>
     )
   }

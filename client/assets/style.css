@@ -97,14 +97,11 @@ main {
 .question-list ul{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 .question-list li{
-  background-color: #ccc;
-  border-radius: 5px;
-  margin: 10px;
-  padding: 10px;
+  margin: 15px;
   width: 300px;
 }
 
