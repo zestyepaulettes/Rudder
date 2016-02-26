@@ -10,7 +10,7 @@ var Option = ({newQuestion, text, changeQuestion, loadTechies, ajaxCall}) => (
     } else {
       ajaxCall ? loadTechies(newQuestion) : changeQuestion(newQuestion)
     }
-  }}><a className="btn btn-primary btn-lg">{text}</a></li>
+  }}><a className="btn btn-primary btn-lg">{text} {ajaxCall ? <span className="glyphicon glyphicon-info-sign"></span> : undefined}</a></li>
     {ajaxCall ? <small className="option">{tips[newQuestion]}</small> : undefined}
   </div>
 

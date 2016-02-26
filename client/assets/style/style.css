@@ -104,11 +104,16 @@ main {
   margin: 15px;
   width: 300px;
 }
-
 small {
   display: none;
 }
 .option small{
-  width: 400px;
-  font-size:15px;
+    width: 300px;
+    font-size: 15px;
+    z-index: 1;
+    position: absolute;
+    background-color: rgba(20,20,20,0.8);
+    padding: 7px;
+    border-radius: 3px;
+    color: white;
 }
