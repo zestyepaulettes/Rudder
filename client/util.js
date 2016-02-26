@@ -26,7 +26,7 @@ var ALL_QUESTIONS = {
   }
 }; 
 
-var tips = {sell: 'Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain', 
+var tips = {sell: 'Click here if you would like to find people who can help you build a website to sell your products or services. Selling online can be an extremely lucrative additional revenue stream for many businesses, making you available to find by anyone accross the web. There are many different options when it comes to selling online including using what we call third-party \'widgets\' which make it easy to get up and running and are more than sufficient for most simple online transactions. For more complicated sales procedures (for specialized products or services), you may also consider having your own personal online shop built for you! Either way, click here to be connected with the right service providers who can definitely provide you with more information.', 
 upgrade:'Except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure consequences',
 advertise: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti',
 dontknow: 'am libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus',
