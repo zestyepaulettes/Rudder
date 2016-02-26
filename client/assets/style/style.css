@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+/* style changed */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -91,16 +91,29 @@ main {
   background-color: #ccc;
 }
 .question-list{
-  font-size: 40px;
-  text-align: center;
+  font-size: 30px;
+  text-align: center; 
+}
+.question-list ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .question-list li{
-  background-color: #ccc;
-  border-radius: 5px;
-  margin: 10px;
-  padding: 10px;
+  margin: 15px;
+  width: 300px;
 }
-
 small {
   display: none;
+}
+.option small{
+    width: 300px;
+    font-size: 15px;
+    z-index: 1;
+    position: absolute;
+    background-color: rgba(20,20,20,0.8);
+    padding: 7px;
+    border-radius: 3px;
+    color: white;
 }

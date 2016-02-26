@@ -26,19 +26,19 @@ var ALL_QUESTIONS = {
   }
 }; 
 
-var tips = {sell: 'sellsellsellsellsellsellsellsellsellsellsellsellsellsellsellsellsell', 
-upgrade:'upgradeupgradeupgradeupgradeupgradeupgradeupgradeupgradeupgradeupgradeupgrade',
-advertise: 'advertiseadvertiseadvertiseadvertiseadvertiseadvertiseadvertiseadvertiseadvertise',
-dontknow: 'dontknowdontknowdontknowdontknowdontknowdontknowdontknowdontknowdontknowdontknowdontknowdontknow',
-customizedWebsite: 'customizedWebsitecustomizedWebsitecustomizedWebsitecustomizedWebsitecustomizedWebsitecustomizedWebsitecustomizedWebsite',};
+var tips = {sell: 'Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain', 
+upgrade:'Except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure consequences',
+advertise: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti',
+dontknow: 'am libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus',
+customizedWebsite: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium',};
 
 
 $(document).ready(function(){
-    $("body").on('mouseenter','.Option', function(event){
-      $(this).find('small').show(1000);
+    $('body').on('mouseenter','.option', function(event){
+      $(this).find('small').show(200);
     });
-    $("body").on('mouseleave','.Option', function(event){
-      $(this).find('small').hide(500);
+    $('body').on('mouseleave','.option', function(event){
+      $(this).find('small').hide(100);
     });
 });
 

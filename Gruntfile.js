@@ -18,7 +18,7 @@ module.exports = function(grunt) {
       }
     },
 
-    clean: ['public/*', 'client/transpiledComponents.min.js', 'client/assets/style.min.css']
+    clean: ['public/*', 'client/transpiledComponents.min.js', 'client/assets/style/style.min.css']
     ,
     babel: {
       options: {
@@ -48,7 +48,7 @@ module.exports = function(grunt) {
     cssmin: {
       target:{
         files: {
-          'client/assets/style.min.css': ['client/assets/style.css']
+          'client/assets/style/style.min.css': ['client/assets/style/style.css']
         }
       }
     },
@@ -57,7 +57,7 @@ module.exports = function(grunt) {
       scripts: {
         files: [
           'client/components/**/*.js',
-          'assets/**/*.js',//we have to take out css from assets
+          'client/assets/style/style.css'
         ],
         tasks: [
           'build'
