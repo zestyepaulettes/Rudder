@@ -21,6 +21,7 @@ app.use(session({secret: 'heineken'}));
 app.use(express.static(__dirname +  '/../client'));
 app.use(passport.session());
 
+
 //start serializing for passport
 passport.serializeUser(function(user, done) {
   done(null, user);
@@ -65,6 +66,16 @@ function ensureAuthenticated(req, res, next) {
   if (req.isAuthenticated()) { return next(); }
   res.redirect('/#/login');
 }
+
+function restrict(req, res, next){
+  if(req.session.user){
+    next()
+  } else {
+    req.session.error = 'Access denied!';
+    res.redirect('/login');
+  }
+}
+
 
 //sends to homepage
 app.get('/', ensureAuthenticated, function(req, res) {
