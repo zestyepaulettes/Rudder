@@ -17,3 +17,10 @@ Cushion is the middleman between techies and business owners
 #### GruntFile Explained
 
 
+#### Instructions to run the project
+
+1. Run 'npm install'
+2. Run 'grunt build'
+3. Run 'nodemon server/server.js'
+
+
