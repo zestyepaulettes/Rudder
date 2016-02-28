@@ -19,8 +19,10 @@ Cushion is the middleman between techies and business owners
 
 #### Instructions to run the project
 
-1. Run 'npm install'
-2. Run 'grunt build'
-3. Run 'nodemon server/server.js'
+After forking/cloning this repo, in your terminal
+1. Navigate to the project folder
+2. Run 'npm install'
+3. Run 'grunt build'
+4. Run 'nodemon server/server.js'
 
 
