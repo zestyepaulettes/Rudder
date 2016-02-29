@@ -19,7 +19,7 @@ var SocialMedia = (props) => (
     </div><br/><br/>
 
     <div id="twitter"className="container" className="jumbotron">
-      <h1> Do you have a twitter account?</h1><br/>
+      <h1> Do you have a Twitter account?</h1><br/>
       <p> Everything on your profile — your photo, header bio and Tweets — should reflect your business identity and personality. Use them to showcase your best content.</p><br/><br/>
       <p> 5 components of having a twitter:</p><br/>
         <p>1. Tweet<br/>
