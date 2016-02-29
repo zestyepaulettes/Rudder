@@ -7,4 +7,7 @@ var DontKnow = (props) => (
     </div>
   </div>
 );
-window.dontknow = DontKnow;
+
+//we are not using this window object below, since we are using the react router.
+window.DontKnow = DontKnow;
+
