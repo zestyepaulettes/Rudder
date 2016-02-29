@@ -13,6 +13,7 @@ ReactDOM.render(
       <Route path="/login" component={Login}/>
       <Route path="/signup" component={SignUpTechie}/>
       <Route path="/contactus" component={ContactUs}/>
+      <Route path="/dontknow" component={DontKnow}/>
     </Route>
   </Router>, document.getElementById('app')
 );
