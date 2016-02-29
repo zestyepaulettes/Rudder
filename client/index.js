@@ -12,6 +12,7 @@ ReactDOM.render(
       <Route path="/socialmedia" component={SocialMedia}/>
       <Route path="/login" component={Login}/>
       <Route path="/signup" component={SignUpTechie}/>
+      <Route path="/contactus" component={ContactUs}/>
     </Route>
   </Router>, document.getElementById('app')
 );
