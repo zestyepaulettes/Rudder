@@ -7,4 +7,4 @@ var DontKnow = (props) => (
     </div>
   </div>
 );
-window.dontknow = DontKnow;
+window.DontKnow = DontKnow;
