@@ -89,7 +89,7 @@ class SignUpTechie extends React.Component {
         fullStackBeast: false,
         result: 'You have successfully created an account. You wil be contacted soon if your skills match any our customer requirements!'
       });
-      hashHistory.push('/');
+      hashHistory.push('/login');
     };
      signUpTechie(this.state, successCallback);
    }
