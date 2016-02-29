@@ -73,6 +73,7 @@ class SignUpTechie extends React.Component {
      //call to ajax
     var successCallback = () => {
       this.setState({
+        username: '',
         password: '',
         name: '',
         email: '',
@@ -81,6 +82,7 @@ class SignUpTechie extends React.Component {
         mobileApp: false,
         graphics: false,
         interactivesites: false,
+        staticSite: false,
         fullStackBeast: false
       });
     };

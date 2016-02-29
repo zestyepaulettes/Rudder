@@ -19,7 +19,7 @@ var SocialMedia = (props) => (
     </div><br/><br/>
 
     <div id="twitter"className="container" className="jumbotron">
-      <h1> Do you have a twitter?</h1><br/>
+      <h1> Do you have a Twitter account?</h1><br/>
       <p> Everything on your profile — your photo, header bio and Tweets — should reflect your business identity and personality. Use them to showcase your best content.</p><br/><br/>
       <p> 5 components of having a twitter:</p><br/>
         <p>1. Tweet<br/>
@@ -40,7 +40,7 @@ var SocialMedia = (props) => (
     </div><br/><br/>
 
     <div id="yelp" className="container" className="jumbotron">
-      <h1>Do you have a Yelp?</h1> <br/>
+      <h1>Do you have a Yelp page?</h1> <br/>
       <p>Yelp is a powerful way to expose your business to local customers. Studies have shown that Nail Salons, Day Spa, Massage Therapy, and Restaurants benefit the most from using Yelp.</p><br/><br/>
       <p> There are several compnents to holding a successful yelp account for your business:</p> <br/>
         <p>1. Name and category<br/>
