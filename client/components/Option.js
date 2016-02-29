@@ -1,7 +1,9 @@
 var hashHistory = window.ReactRouter.hashHistory;
 
 var Option = ({newQuestion, text, changeQuestion, loadTechies, ajaxCall}) => (
-  <div className="option">
+  <div className="option container">
+    <div className="row lg">
+      <div className="span12">
   <li onClick={function(){
     if(newQuestion === 'iHaveTech') {
       hashHistory.push('/login');
@@ -10,8 +12,10 @@ var Option = ({newQuestion, text, changeQuestion, loadTechies, ajaxCall}) => (
     } else {
       ajaxCall ? loadTechies(newQuestion) : changeQuestion(newQuestion)
     }
-  }}><a className="btn btn-primary btn-lg">{text} {ajaxCall ? <span className="glyphicon glyphicon-info-sign"></span> : undefined}</a></li>
+  }}><a className="btn btn-primary btn-lg container">{text} {ajaxCall ? <span className="glyphicon glyphicon-info-sign"></span> : undefined}</a></li>
     {ajaxCall ? <small className="option">{tips[newQuestion]}</small> : undefined}
+      </div>
+    </div>
   </div>
 
 );
