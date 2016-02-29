@@ -1,4 +1,4 @@
-/* This file creates a schema for the techie's to be stored in a mongo database.*/
+/* This file creates a schema for the techies to be stored in a mongo database.*/
 
 
 var mongoose = require('mongoose');
