@@ -101,7 +101,7 @@ class SignUpTechie extends React.Component {
             /> <br/>
           Password:
             <input
-             type="text"
+             type="password"
              placeholder="Enter a password"
              value={this.state.password}
              onChange={this.handlePasswordChange.bind(this)}
