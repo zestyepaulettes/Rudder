@@ -12,7 +12,8 @@ class SignUpTechie extends React.Component {
       graphics: false,
       staticSite: false,
       interactiveSites: false,
-      fullStackBeast: false
+      fullStackBeast: false,
+      result: ''
     };
   }
 
@@ -83,7 +84,8 @@ class SignUpTechie extends React.Component {
         graphics: false,
         interactivesites: false,
         staticSite: false,
-        fullStackBeast: false
+        fullStackBeast: false,
+        result: 'You have successfully created an account! You will be contacted soon if your skills match any of our customers needs!'
       });
     };
      signUpTechie(this.state, successCallback);
@@ -146,6 +148,9 @@ class SignUpTechie extends React.Component {
                    /> I can make a fullstack application<br/>
             <input type="submit" value="Post" onClick={this.handleSubmit.bind(this)}/>
         </form>
+        <div>
+          <SignUpResult result={this.state.result}/>
+        </div>
       </div>
     )
   }
