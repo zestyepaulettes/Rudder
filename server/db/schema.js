@@ -1,6 +1,9 @@
+/* This file creates a schema for the techies to be stored in a mongo database.*/
+
+
 var mongoose = require('mongoose');
 
-var fakeData = require('./fakeData');
+//var fakeData = require('./fakeData');
 
 mongoose.connect('mongodb://localhost/cushion');
 
