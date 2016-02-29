@@ -14,7 +14,7 @@ module.exports = function(grunt) {
 
     nodemon: {
       dev: {
-        script: 'server.js'
+        script: 'server/server.js'
       }
     },
 
@@ -112,6 +112,10 @@ module.exports = function(grunt) {
 
   grunt.registerTask('build', [
     'clean', 'concat', 'babel','uglify','cssmin'
+  ]);
+
+  grunt.registerTask('run', [
+    'build', 'nodemon:dev'
   ]);
 
   grunt.registerTask('upload', function(n) {
