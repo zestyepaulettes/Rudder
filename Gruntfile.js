@@ -1,3 +1,15 @@
+/* This file handles all the grunt tasks to be performed. 
+-The concat task concats all the js files in in components folder and stores 
+them in the concatedComponents file in public folder.
+-The babel task transpiles the es6 to es5 version in the concatedcomponents file and stores in public/transpiledComponents.js 
+-The uglify task minifies the transpiled file - public/transpiledComponents.js aand stores in client/transpiledComponents.min.js file
+-The cssmin task minfifies all style.css files and stores it in 'client/assets/style/style.min.css' file
+-The clean task deletes all the files in public folder, the minified js file and also the minified css file.
+-The watch task runs the 'Build' task whenever there is any change in the js files in components folder and style.css file 
+-The nodemon task runs nodemon server on server/server.js file.
+ */
+
+
 module.exports = function(grunt) {
 
   grunt.initConfig({
@@ -71,6 +83,8 @@ module.exports = function(grunt) {
     },
   });
 
+//All tasks in grunt has to be loaded before being run using the grunt.loadNpmTasks command.
+
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
@@ -109,11 +123,12 @@ module.exports = function(grunt) {
   grunt.registerTask( 'test', [
     
   ]);
+//The 'build' task runs all these tasks - 'clean', 'concat', 'babel','uglify','cssmin' in the specified order.
 
   grunt.registerTask('build', [
     'clean', 'concat', 'babel','uglify','cssmin'
   ]);
-
+//The grunt run task will first run 'build' task and then run the nodemon task
   grunt.registerTask('run', [
     'build', 'nodemon:dev'
   ]);

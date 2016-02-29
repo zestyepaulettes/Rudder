@@ -1,4 +1,5 @@
-
+/* This file acts as the router for react.
+It routes to different urls.*/
 var Router = window.ReactRouter.Router;
 var Route = window.ReactRouter.Route;
 var hashHistory = window.ReactRouter.hashHistory;

@@ -1,3 +1,11 @@
+/* This file states the app to losten at port 8000. 
+The file handles all requests to database. 
+-The get requets from '/api/techie', looks for all techie's stored
+ in database and returns them as a response. 
+-The post requests handles creating and adding a new techie to the database.
+-The get requests from '/api/techie/:techieType' finds techie's who have a specific skill(tecietype) 
+ and returns a list of all those techies. */
+
 var express = require('express');
 var bodyParser = require('body-parser');
 var morgan = require('morgan');
