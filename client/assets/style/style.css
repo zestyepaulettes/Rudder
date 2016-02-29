@@ -1,7 +1,7 @@
 
 h1 {
   text-align: center;
-  font-size: 25px;
+  font-size: 1.5em;
   padding: 5px;
 }
 nav {
@@ -14,6 +14,10 @@ nav li {
 }
 nav a {
   color: white;
+}
+
+p {
+  font-size: 1.3em;
 }
 main {
   padding: 25px;
@@ -28,7 +32,7 @@ main {
   background-color: #ccc;
 }
 .question-list{
-  font-size: 30px;
+  font-size: 2em;
   text-align: center;
 }
 .question-list ul{
@@ -46,7 +50,7 @@ small {
 }
 .option small{
     width: 300px;
-    font-size: 15px;
+    font-size: 0.7em;
     z-index: 1;
     position: absolute;
     background-color: rgba(20,20,20,0.8);
