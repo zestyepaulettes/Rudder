@@ -85,7 +85,7 @@ class SignUpTechie extends React.Component {
         interactivesites: false,
         staticSite: false,
         fullStackBeast: false,
-        result: 'You have successfully created an account! You will be contacted soon if your skills match any of our customers needs!'
+        result: 'You have successfully created an account. You wil be contacted soon if your skills match any our customer requirements!'
       });
     };
      signUpTechie(this.state, successCallback);
@@ -149,7 +149,7 @@ class SignUpTechie extends React.Component {
             <input type="submit" value="Post" onClick={this.handleSubmit.bind(this)}/>
         </form>
         <div>
-          <SignUpResult result={this.state.result}/>
+         <p> {this.state.result} </p>
         </div>
       </div>
     )
