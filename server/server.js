@@ -1,9 +1,9 @@
-/* This file states the app to losten at port 8000. 
-The file handles all requests to database. 
+/* This file states the app to losten at port 8000.
+The file handles all requests to database.
 -The get requets from '/api/techie', looks for all techies stored
- in database and returns them as a response. 
+ in database and returns them as a response.
 -The post requests handles creating and adding a new techie to the database.
--The get requests from '/api/techie/:techieType' finds techies who have a specific skill(tecietype) 
+-The get requests from '/api/techie/:techieType' finds techies who have a specific skill(tecietype)
  and returns a list of all those techies. */
 
 var express = require('express');
@@ -29,6 +29,12 @@ app.use(session({secret: 'heineken'}));
 app.use(express.static(__dirname +  '/../client'));
 app.use(passport.session());
 
+/*
+code lines 34-86 establishes passport OAuth with github.
+This requires installation of passport, express-session, and passport-github2
+when you go to sign up with github link, it will ask to authenticate your github login
+then route you to sign up page after authentication
+*/
 
 //start serializing for passport
 passport.serializeUser(function(user, done) {
@@ -64,6 +70,7 @@ app.get('/auth/github/callback',
     res.redirect('/#/signup');
   });
 
+//this is not being utilized right now since we don't have a log in, TODO: implement log in and log out routes
 app.get('/logout', function(req, res){
   req.logout();
   res.redirect('/');
@@ -101,6 +108,7 @@ app.get('/api/techie', function(req,res) {
   });
 });
 
+//this get request filters list of techies by "techie type" (aka which checkboxes they mark true during signup)
 app.get('/api/techie/:techieType', function(req,res) {
   var techieType;
   if(req.query.techieType === 'sell'){
