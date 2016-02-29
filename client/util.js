@@ -35,10 +35,10 @@ customizedWebsite: 'If you need something more heavy duty or you think you need 
 
 $(document).ready(function(){
     $('body').on('mouseenter','.option', function(event){
-      $(this).find('small').show(200);
+      $(this).find('small').show(600);
     });
     $('body').on('mouseleave','.option', function(event){
-      $(this).find('small').hide(100);
+      $(this).find('small').hide(400);
     });
 });
 
