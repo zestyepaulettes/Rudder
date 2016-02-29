@@ -1,3 +1,11 @@
+/*
+This page sets up a lot of input boxes for developers to sign-up.
+onChange senses the changes as a user types and calls an event handler for each input box which will store the values
+(e.target.value.. etc) as states.
+
+On Submit, there is an event handler that will prevent default (automatic refresh), call signUpTechie helper
+(which performs an ajax call to submit to database)
+*/
 var hashHistory = window.ReactRouter.hashHistory;
 
 class SignUpTechie extends React.Component {

@@ -1,6 +1,6 @@
 var ALL_QUESTIONS = {
   whyAreYouHere:{
-    question: 'Why are you here',
+    question: 'What can we help you with today?',
     options: {
       iHaveTech: 'I have tech',
       iNeedTech: 'I need tech'
@@ -35,11 +35,9 @@ customizedWebsite: 'If you need something more heavy duty or you think you need 
 
 $(document).ready(function(){
     $('body').on('mouseenter','.glyphicon', function(event){
-      // $(this).find('small').fadeIn(600);
       $(this).closest('.option').find('small').fadeIn(600);
     });
     $('body').on('mouseleave','.glyphicon', function(event){
-      // $(this).find('small').fadeOut(400);
       $(this).closest('.option').find('small').fadeOut(300);
 
     });

@@ -123,6 +123,7 @@ app.get('/api/techie/:techieType', function(req,res) {
   });
 });
 
+//this post handler puts info from new user SignUp into the db
 app.post('/api/techie', function(req, res){
   //make sure req.body has correct obj format
   db.Techie.create(req.body, function(err ,techie) {
