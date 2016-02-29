@@ -1,8 +1,8 @@
 var SocialMedia = (props) => (
   <div>
-    <div id="facebook"class="container" class="jumbotron">
-      <a class="btn btn-social-icon btn-twitter">
-        <span class="fa fa-twitter"></span>
+    <div id="facebook"className="container" className="jumbotron">
+      <a className="btn btn-social-icon btn-twitter">
+        <span className="fa fa-twitter"></span>
       </a>
       <h1>Do you have a Facebook page?</h1><br/>
         <p>With 1.59 billion active users monthly, Facebook is the largest social network. There are numerous benefits for opening a Facebook account for your business.</p><br/>
@@ -18,7 +18,7 @@ var SocialMedia = (props) => (
         <p>TIP: Repond to all comments to show that you are active and listening to customer response. Less than 30% of companies respond to comments, and this reflects poorly on a company.</p>
     </div><br/><br/>
 
-    <div id="twitter"class="container" class="jumbotron">
+    <div id="twitter"className="container" className="jumbotron">
       <h1> Do you have a twitter?</h1><br/>
       <p> Everything on your profile — your photo, header bio and Tweets — should reflect your business identity and personality. Use them to showcase your best content.</p><br/><br/>
       <p> 5 components of having a twitter:</p><br/>
@@ -39,7 +39,7 @@ var SocialMedia = (props) => (
         </p>
     </div><br/><br/>
 
-    <div id="yelp" class="container" class="jumbotron">
+    <div id="yelp" className="container" className="jumbotron">
       <h1>Do you have a Yelp?</h1> <br/>
       <p>Yelp is a powerful way to expose your business to local customers. Studies have shown that Nail Salons, Day Spa, Massage Therapy, and Restaurants benefit the most from using Yelp.</p><br/><br/>
       <p> There are several compnents to holding a successful yelp account for your business:</p> <br/>
