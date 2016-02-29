@@ -1,7 +1,7 @@
-var Contactus = (props) => (
+var ContactUs = (props) => (
   <div>
     <p> If you are still not sure want you need, please contact us at: </p>
-    </br>
+    <br/>
     <p> Tiffany@cushion.com </p>
   </div>
 );
