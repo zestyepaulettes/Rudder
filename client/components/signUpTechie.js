@@ -1,3 +1,5 @@
+var hashHistory = window.ReactRouter.hashHistory;
+
 class SignUpTechie extends React.Component {
   constructor(props){
     super(props);
@@ -87,6 +89,7 @@ class SignUpTechie extends React.Component {
         fullStackBeast: false,
         result: 'You have successfully created an account. You wil be contacted soon if your skills match any our customer requirements!'
       });
+      hashHistory.push('/');
     };
      signUpTechie(this.state, successCallback);
    }
