@@ -1,6 +1,6 @@
 var ALL_QUESTIONS = {
   whyAreYouHere:{
-    question: 'Why are you here',
+    question: 'What can we help you with today?',
     options: {
       iHaveTech: 'I have tech',
       iNeedTech: 'I need tech'
