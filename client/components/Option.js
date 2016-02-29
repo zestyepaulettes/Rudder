@@ -8,7 +8,9 @@ var Option = ({newQuestion, text, changeQuestion, loadTechies, ajaxCall}) => (
     if(newQuestion === 'iHaveTech') {
       hashHistory.push('/login');
     } else if(newQuestion === 'socialMedia'){
-      hashHistory.push('/socialmedia')
+      hashHistory.push('/socialmedia');
+    } else if(newQuestion === 'dontknow'){
+      hashHistory.push('/dontknow');
     } else {
       ajaxCall ? loadTechies(newQuestion) : changeQuestion(newQuestion)
     }
