@@ -1,4 +1,4 @@
-var SocialMedia = (props) => (
+var DontKnow = (props) => (
   <div>
     <div id="facebook" className="container" className="jumbotron">
       <h1>If you just want to be on the internet maybe you could use:</h1><br/>
@@ -7,4 +7,4 @@ var SocialMedia = (props) => (
     </div>
   </div>
 );
-window.SocialMedia = SocialMedia;
+window.dontknow = DontKnow;
