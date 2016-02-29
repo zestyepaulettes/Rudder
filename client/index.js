@@ -1,5 +1,8 @@
 /* This file acts as the router for react.
-It routes to different urls.*/
+It routes to different urls.
+The hashHistory component is from react. It is used to save the history of routes. 
+It can be used to re-direct to different routes.*/
+
 var Router = window.ReactRouter.Router;
 var Route = window.ReactRouter.Route;
 var hashHistory = window.ReactRouter.hashHistory;
