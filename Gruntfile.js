@@ -77,6 +77,20 @@ module.exports = function(grunt) {
       }
     },
 
+    simplemocha: {
+      options: {
+        globals: ['expect', 'sinon'],
+        timeout: 3000,
+        ignoreLeaks: false,
+        ui: 'bdd',
+        repoter: 'spec'
+      },
+      server: {
+        src: ['test/backend-tests.js']
+      }
+    }
+    ,
+
     shell: {
       prodServer: {
       }
@@ -94,6 +108,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-eslint');
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-nodemon');
+  grunt.loadNpmTasks('grunt-simple-mocha');
 
   grunt.registerTask('server-dev', function (target) {
     // Running nodejs in a different process and displaying output on the main console
@@ -121,7 +136,7 @@ module.exports = function(grunt) {
   ////////////////////////////////////////////////////
 
   grunt.registerTask( 'test', [
-    
+    'simplemocha'   
   ]);
 //The 'build' task runs all these tasks - 'clean', 'concat', 'babel','uglify','cssmin' in the specified order.
 

@@ -20,23 +20,24 @@ In the GruntFile are mainly using 3 tasks:
 
 Grunt **build**, which runs: 
 
-1. **'clean'**: To delete all the minified and transpiled files, you MUST use clean before commiting or doing a push to your branch
+ 1. **'clean'**: To delete all the minified and transpiled files, you MUST use clean before commiting or doing a push to your branch
 
-2. **'concat'**: To concatenate all the react components into one file
+ 2. **'concat'**: To concatenate all the react components into one file
 
-3. **'babel'**: To transpile from ES6 to ES5
+ 3. **'babel'**: To transpile from ES6 to ES5
 
-4. **'uglify'**: To minify the concatenated and transpiled react components
+ 4. **'uglify'**: To minify the concatenated and transpiled react components
 
-5. **'cssmin'**: To minify the css stylesheet
+ 5. **'cssmin'**: To minify the css stylesheet
 
 
-Grunt **watch**, which runs:
+Grunt **run**, which runs:
 
-1. **'build'**: That runs all the previous tasks
+ 1. **'build'**: That runs all the previous tasks
 
-2. **'nodemon'**: Runs the server at server/server.js
+ 2. **'nodemon'**: Runs the server at server/server.js
 
+Grunt **watch**, which watches all the Component files and the stylesheet to re-build all the files again everytime something changes
 
 #### Instructions to run the project
 
