@@ -49,8 +49,8 @@ Rudder is the middleman between techies and business owners. We recognize the pr
 We do this by creating a filtering system in which the business owner answers simple, non-technical questions that will route them to the appropriate list of developers in the area. In the process, we educate our users with basic information that answers questions like “Do you need a yelp page?”.
 
 #### Team
-Tiffany Thong
-Hamzah Chaudhary
+Tiffany Thong (Product Owner)
+Hamzah Chaudhary (Scrum Master)
 Yasu Flores
 Arthi Palaniappan
 
