@@ -38,7 +38,7 @@ class Login extends React.Component {
           </form>
           <h2>Sign up for an account through GitHub</h2>
           <div>
-            <a href="/auth/github">Sign up with GitHub</a>
+            <a className="btn btn-social btn-github" href="/auth/github"><span className="fa fa-github"></span>Sign up with GitHub</a>
           </div>
         </div>
       )
