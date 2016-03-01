@@ -2,8 +2,8 @@
 var SocialMedia = (props) => (
   <div>
     <div id="facebook"className="container" className="jumbotron">
-      <a className="btn btn-social-icon btn-twitter">
-        <span className="fa fa-twitter"></span>
+      <a href= 'https://www.facebook.com/business/products/pages/' className="btn btn-social btn-facebook">
+        <span className="fa fa-facebook"></span>Click to goto Facebook Business Pages
       </a>
       <h1>Do you have a Facebook page?</h1><br/>
         <p>With 1.59 billion active users monthly, Facebook is the largest social network. There are numerous benefits for opening a Facebook account for your business.</p><br/>
@@ -20,6 +20,10 @@ var SocialMedia = (props) => (
     </div><br/><br/>
 
     <div id="twitter"className="container" className="jumbotron">
+    <a href= '
+https://business.twitter.com/basics/create-a-profile-for-your-business' className="btn btn-social btn-twitter">
+      <span className="fa fa-twitter"></span>Click to goto Twitter Business Pages
+    </a>
       <h1> Do you have a Twitter account?</h1><br/>
       <p> Everything on your profile — your photo, header bio and Tweets — should reflect your business identity and personality. Use them to showcase your best content.</p><br/><br/>
       <p> 5 components of having a twitter:</p><br/>
