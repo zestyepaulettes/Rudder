@@ -71,3 +71,7 @@ p {
   padding-left: 10px;
   padding-right: 10px;
 }
+
+.btn-social {
+  display: inline-block;
+}
