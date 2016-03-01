@@ -17,40 +17,35 @@ Once the project moves into development, the press release can be used as a touc
  -->
 
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
-  Cushion.
+  Cushion
 
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
- Cushion is a middleman between business owners and techies/
+
+ Cushion is the middleman between business owners and technology service providers
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
 
-  Cushion is a place where a non tech-savvy person can come and be routed to the right developer.
-  The problem lies in the disconnect between business owners who want to stay relevant/ have technological needs beyond their scope and the developers who can provide this service. 
-  
-
+  Cushion is an online directory where business owners can search for the relevant technology service providers based on some simple questions and then be offered a selection to choose from!
 
 ## Problem ##
-  > Describe the problem your product solves.
+ 
+  The problem lies in the disconnect between business owners who want to stay relevant/ have technological needs beyond their scope and the developers who can provide this service. 
   
-
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+  Using simple, non technical language, we provide a platform where anyone can be connected with the right technical freelancer to solve their issues. 
  
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
+  "We built Cushion because we all have friends and family who want apps and websites built, but they often don't know exactly what they want, that's where Cushion comes in!"
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  Head over to http://104.236.170.94:8000/ and follow the instructions! 
 
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  "Like a boat without a rudder, I wandered aimlessly from one web development company to another until I heard about Cushion, I found the most awesome web developer who suited my needs exactly!"
  
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  We are in the process of adding many more features and additional plug-ins for Cushion, in the mean time head over to the link above! 
 
 
