@@ -1,4 +1,7 @@
-
+/* This file has the 'Main' react class that has 3 state properties:
+  - allQuestions that has list of questions from the ALL_QUESTIONS object in util.js file.
+  - An array of results that will display all the matching techies
+  -A current question object that has the current question and list of options displayed */
 class Main extends React.Component{
   constructor(props){
     super(props);
@@ -9,28 +12,23 @@ class Main extends React.Component{
     };
   }
 
-  resetState(){
-    this.setState({
-      results: [],
-      currentQuestion: this.state.allQuestions.whyAreYouHere
-    });
-  }
-
+//This function is used to reset the current question and options depending on what the user chooses
   changeQuestion(newQuestion){
     this.setState({
       currentQuestion: this.state.allQuestions[newQuestion]
     });
   }
-
+//This function is used as a callback in getTechiesByType function.
+//This function updates the list of matching techies displayed
   loadTechies(techieType){
     var updateState = (results)=>{
       this.setState({
         results: results
       });
     };
-    getTechiesByType(techieType, updateState);
+    getTechiesByType(techieType, updateState); /* This is the function defined in the ajaxRequests.js file, it is used to get list of matching techies from database */
   }
-
+//This function will set the 'whyAreYouHere' question as the current Question when the page loads.
   componentWillMount(){
     this.setState({
       currentQuestion: this.state.allQuestions.whyAreYouHere

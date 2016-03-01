@@ -1,5 +1,7 @@
 var hashHistory = window.ReactRouter.hashHistory;
-
+/* This file has the option function that will redirect the page(using hashHistory) to social media or ihavetech or
+  dontknow page depending on what the user clicks.
+  -if the question has a value true for ajaxcall(see: util.js), the loadtechies function is invoked or else changeQuestion function is invoked */
 var Option = ({newQuestion, text, changeQuestion, loadTechies, ajaxCall}) => (
   <div className="option container">
     <div className="row lg">
