@@ -1,3 +1,9 @@
+/* This file contains the list of questions that will guide the business owners to find the correct techies.
+-Each question is an object with 2 key-value pairs. one for the question and one for all the possible answers
+-The last question has an ajaxCall property set to true. This will be used to invoke the ajax request to get all available techies with 
+matching skills. */
+
+
 var ALL_QUESTIONS = {
   whyAreYouHere:{
     question: 'What can we help you with today?',
@@ -26,13 +32,14 @@ var ALL_QUESTIONS = {
   }
 };
 
+//The tips is an object that contains hints about each question. The tips pop up when the user mouse over the question.
 var tips = {sell: 'Click here if you would like to find people who can help you build a website to sell your products or services. Selling online can be an extremely lucrative additional revenue stream for many businesses, making you available to find by anyone accross the web. There are many different options when it comes to selling online including using what we call third-party \'widgets\' which make it easy to get up and running and are more than sufficient for most simple online transactions. \n For more complicated sales procedures (for specialized products or services), you may also consider having your own personal online shop built for you! Either way, click here to be connected with the right service providers who can definitely provide you with more information.',
 upgrade: 'Click here if you\'re looking to give your existing page a revamp or want to add more functionality. We can connect you with designers who can help you give your website a refresh.',
 advertise: 'If you\'re looking to try and build a bigger online presence, this is the button for you! This could mean you need a website to get more customers, you want to hear about how to make your website more attractive to drive more traffic to it (this is known as SEO- Search Engine Optimisation) or just to show off your products! Whatever you need to advertise your company, click here!',
 dontknow: 'If you have no idea what you need, this is the way forward for you! You can get setup with a really straightforward and simple online solution.',
 customizedWebsite: 'If you need something more heavy duty or you think you need something custom built, click here and we\'ll hook you up with one of our web whizzes (known in the business as full-stack engineers) who will be able to help you out with what you need.'};
 
-
+//This jquery is used to show the hints/tips for each each question, when the user mouse over the 'i' symbol next to the question.
 $(document).ready(function(){
     $('body').on('mouseenter','.glyphicon', function(event){
       $(this).closest('.option').find('small').fadeIn(600);

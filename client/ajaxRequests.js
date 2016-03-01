@@ -1,3 +1,6 @@
+/* This file handles all the ajax requests to the server and database. */
+
+//This ajax requests is to fetch all the techies stored in database.
 var getTechies = function(success, fail) {
   $.get({
     url: '/api/techie',
@@ -6,6 +9,7 @@ var getTechies = function(success, fail) {
   });
 };
 
+//This ajax requests is used to get techies from databse that have a specific set of a skill(techieType)
 var getTechiesByType = function(techieType, callback) {
   $.get({
     url: '/api/techie/' + techieType,
@@ -19,6 +23,7 @@ var getTechiesByType = function(techieType, callback) {
   });
 };
 
+//Todo: This ajax requests is sent to the angellist api to fetch data.
 var getAngelListData = function(success, fail) {
   $.get({
     url: '/api/techie',

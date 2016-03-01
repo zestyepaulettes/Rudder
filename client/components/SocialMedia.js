@@ -1,3 +1,4 @@
+//This is a static page that guides the business owners to set up a few social media pages like facebook. 
 var SocialMedia = (props) => (
   <div>
     <div id="facebook"className="container" className="jumbotron">
