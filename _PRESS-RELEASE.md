@@ -1,4 +1,4 @@
-# Cushion #
+# Rudder #
 
 <!--
 > This material was originally posted [here](http://www.quora.com/What-is-Amazons-approach-to-product-development-and-product-management). It is reproduced here for posterities sake.
@@ -17,15 +17,15 @@ Once the project moves into development, the press release can be used as a touc
  -->
 
 ## Heading ##
-  Cushion
+  Rudder
 
 ## Sub-Heading ##
 
- Cushion is the middleman between business owners and technology service providers
+ Rudder is the middleman between business owners and technology service providers
 
 ## Summary ##
 
-  Cushion is an online directory where business owners can search for the relevant technology service providers based on some simple questions and then be offered a selection to choose from!
+  Rudder is an online directory where business owners can search for the relevant technology service providers based on some simple questions and then be offered a selection to choose from!
 
 ## Problem ##
  
@@ -36,16 +36,16 @@ Once the project moves into development, the press release can be used as a touc
  
 
 ## Quote from You ##
-  "We built Cushion because we all have friends and family who want apps and websites built, but they often don't know exactly what they want, that's where Cushion comes in!"
+  "We built Rudder because we all have friends and family who want apps and websites built, but they often don't know exactly what they want, that's where Rudder comes in!"
 
 ## How to Get Started ##
   Head over to http://104.236.170.94:8000/ and follow the instructions! 
 
 
 ## Customer Quote ##
-  "Like a boat without a rudder, I wandered aimlessly from one web development company to another until I heard about Cushion, I found the most awesome web developer who suited my needs exactly!"
+  "Like a boat without a rudder, I wandered aimlessly from one web development company to another until I heard about Rudder, I found the most awesome web developer who suited my needs exactly!"
  
 ## Closing and Call to Action ##
-  We are in the process of adding many more features and additional plug-ins for Cushion, in the mean time head over to the link above! 
+  We are in the process of adding many more features and additional plug-ins for Rudder, in the mean time head over to the link above! 
 
 

@@ -1,8 +1,8 @@
-## Cushion app
+## Rudder app
 
-#### What is Cushion?
+#### What is Rudder?
 
-Cushion is the middleman between techies and business owners
+Rudder is the middleman between techies and business owners
 
 #### Front-End Frameworks
 

@@ -2,7 +2,7 @@ var ContactUs = (props) => (
   <div>
     <p> If you have any questions, please feel free to contact us at: </p>
     <br/>
-    <p> Tiffany@cushion.com </p>
+    <p> Tiffany@Rudder.com </p>
   </div>
 );
 
