@@ -18,7 +18,7 @@ class Main extends React.Component{
       currentQuestion: this.state.allQuestions[newQuestion]
     });
   }
-//This function is used as a callback in line34
+//This function is used as a callback in getTechiesByType function.
 //This function updates the list of matching techies displayed
   loadTechies(techieType){
     var updateState = (results)=>{
@@ -28,7 +28,7 @@ class Main extends React.Component{
     };
     getTechiesByType(techieType, updateState); /* This is the function defined in the ajaxRequests.js file, it is used to get list of matching techies from database */
   }
-//This function will set the 'whyAreYouHere' question as the urrent Question when the page loads.
+//This function will set the 'whyAreYouHere' question as the current Question when the page loads.
   componentWillMount(){
     this.setState({
       currentQuestion: this.state.allQuestions.whyAreYouHere
