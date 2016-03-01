@@ -51,8 +51,8 @@ We do this by creating a filtering system in which the business owner answers si
 #### Team
 Tiffany Thong (Product Owner)
 Hamzah Chaudhary (Scrum Master)
-Yasu Flores
-Arthi Palaniappan
+Yasu Flores (Team Member)
+Arthi Palaniappan (Team Member)
 
 
 #### Front-End Frameworks
