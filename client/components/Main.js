@@ -40,7 +40,7 @@ class Main extends React.Component{
     <div>
       <div className="jumbotron">
       <h1>Rudder</h1>
-      <p>Online presence is a necessity for businesses today but, for many, understanding their technology needs is a mysterious and often confusing path. With many web development companies pushing unnecessary and often unsuitable products, it can be hard to work out what really would be most beneficial for your particular case. <br/><br/>Rudder makes finding the right technology service provider simple, based off your specific needs as a business owner, we can put you in touch with a list of Rudder approved freelancers who can help you get the right tech for your business.</p>
+      <p>Online presence is a necessity for businesses today but, for many, understanding their technology needs is a mysterious and often confusing path. With many web development companies pushing unnecessary and often unsuitable products, it can be hard to work out what really would be most beneficial for your particular case. <br/><br/>Rudder makes finding the right technology service provider simple. Based off your specific needs as a business owner, we can put you in touch with a list of Rudder approved freelancers who can help you get the right tech for your business.</p>
       </div>
       <QuestionList question={this.state.currentQuestion} changeQuestion={this.changeQuestion.bind(this)} loadTechies={this.loadTechies.bind(this)}/>
       <ResultList results={this.state.results}/>
