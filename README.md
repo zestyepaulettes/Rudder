@@ -48,12 +48,17 @@ Rudder is the middleman between techies and business owners. We recognize the pr
 
 We do this by creating a filtering system in which the business owner answers simple, non-technical questions that will route them to the appropriate list of developers in the area. In the process, we educate our users with basic information that answers questions like “Do you need a yelp page?”.
 
-#### Team
-Tiffany Thong (Product Owner)
-Hamzah Chaudhary (Scrum Master)
-Yasu Flores (Team Member)
-Arthi Palaniappan (Team Member)
+<img src = 'https://github.com/zestyepaulettes/Rudder/blob/master/rudder%20screenshot.png'>
 
+### Team
+
+#### <a href='https://github.com/tiffeli'>Tiffany Thong</a> (Product Owner)
+
+#### <a href='https://github.com/hamzahc1'>Hamzah Chaudhary</a> (Scrum Master) 
+
+#### <a href='https://github.com/carlosyasu91'>Yasu Flores</a> (Software Engineer)
+
+#### <a href='https://github.com/aarti156'>Arthi Palaniappan</a> (Software Engineer)
 
 #### Front-End Frameworks
 
